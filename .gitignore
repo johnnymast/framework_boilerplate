@@ -1,0 +1,8 @@
+/vendor/
+/node_modules/
+.idea/
+var/doctrine
+var/cache
+var/uploads/*
+.env-local
+.env-docker

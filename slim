@@ -1,0 +1,33 @@
+#!/usr/bin/env php
+<?php
+
+use App\Console\ConsoleKernel;
+use App\Framework\Application;
+use App\Framework\Bootstrap\Bridge;
+use DI\Container;
+
+require __DIR__ . '/vendor/autoload.php';
+
+define('PROJECT_PATH', realpath(__DIR__));
+
+$app = Bridge::createFromContainer(new Container());
+
+if (!isset($_SERVER['app'])) {
+    $_SERVER['app'] = $app;
+}
+
+function app(): ?Application
+{
+    if (isset($_SERVER['app'])) {
+        $app = &$_SERVER['app'];
+        return $app;
+    }
+
+    return null;
+}
+
+$kernel = new ConsoleKernel();
+$kernel->boot();
+
+$app->resolve(Symfony\Component\Console\Application::class)
+    ->run();

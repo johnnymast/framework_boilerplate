@@ -1,0 +1,36 @@
+{
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/",
+            "App\\Tests\\": "tests/"
+        }
+    },
+    "require": {
+        "slim/slim": "4.*",
+        "slim/psr7": "^1.6",
+        "php-di/slim-bridge": "^3.3",
+        "vlucas/phpdotenv": "^5.5",
+        "eftec/bladeone": "^4.9",
+        "zeuxisoo/slim-whoops": "^0.7.3",
+        "symfony/console": "^6.2",
+        "doctrine/dbal": "^3.6",
+        "doctrine/migrations": "^3.6",
+        "doctrine/orm": "^2.15",
+        "symfony/cache": "^6.2",
+        "phpmailer/phpmailer": "^6.8",
+        "twig/twig": "^3.0",
+        "maximebf/debugbar": "^1.19",
+        "monolog/monolog": "^3.5"
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^3.7",
+        "phpstan/phpstan": "^1.10",
+        "pestphp/pest": "^2.6",
+        "symfony/var-dumper": "^6.3"
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    }
+}

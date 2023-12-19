@@ -1,5 +1,5 @@
 <?php
 
+use App\Http\Controller\IndexController;
 
-
-app()->get('/', fn() => view('welcome'));
+app()->get('/', [IndexController::class, "index"]);

@@ -1,4 +1,14 @@
 {
+    "name": "johnnymast/framework_boilerplate",
+    "description": "Personal boiler plate for creating new websites.",
+    "minimum-stability": "dev",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Johnny Mast",
+            "email": "mastjohnny@gmail.com"
+        }
+    ],
     "autoload": {
         "psr-4": {
             "App\\": "src/",

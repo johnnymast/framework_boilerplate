@@ -8,6 +8,11 @@
     <meta name="description" content="description here">
     <meta name="keywords" content="keywords,here">
 
+    @debug
+    <script src="/debugbar/javascript"></script>
+    <link rel="stylesheet" href="/debugbar/css"/>
+    @enddebug
+
     <link rel="stylesheet" href="/css/app.css" data-n-g=""/>
 
     <script id="settings" type="application/json">
@@ -21,6 +26,10 @@
 </div>
 
 <script defer src="/assets/js/app.js"></script>
+
+@debug
+{!! $phpdebugbar->render(); !!}
+@enddebug
 
 </body>
 </html>

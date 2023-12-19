@@ -1,7 +1,7 @@
 {
     "name": "johnnymast/framework_boilerplate",
     "description": "Personal boiler plate for creating new websites.",
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "license": "proprietary",
     "authors": [
         {

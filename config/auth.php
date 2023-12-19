@@ -9,6 +9,7 @@ return [
     ],
     "passkeys" => [
         'host' => $_ENV['APP_URL'],
+        'domain' => $_ENV['APP_DOMAIN'],
         'enabled' => true,
     ],
     'login_blocking' => [

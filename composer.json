@@ -33,7 +33,7 @@
         "monolog/monolog": "^3.5"
     },
     "require-dev": {
-        "squizlabs/php_codesniffer": "^3.7",
+        "squizlabs/php_codesniffer": "git^3.7",
         "phpstan/phpstan": "^1.10",
         "pestphp/pest": "^2.6",
         "symfony/var-dumper": "^6.3"

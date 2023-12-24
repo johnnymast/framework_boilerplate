@@ -12,6 +12,24 @@ return [
         'domain' => $_ENV['APP_DOMAIN'],
         'enabled' => true,
     ],
+    'oauth' => [
+        'google' => [
+            'client_id' => $_ENV['OAUTH_GOOGLE_CLIENTID'],
+            'client_secret' => $_ENV['OAUTH_GOOGLE_CLIENT_SECRET'],
+            'enabled' => true,
+        ],
+        'github' => [
+            'client_id' => $_ENV['OAUTH_GITHUB_CLIENTID'],
+            'client_secret' => $_ENV['OAUTH_GITHUB_CLIENT_SECRET'],
+            'enabled' => true,
+        ],
+        'discord' => [
+            'client_id' => $_ENV['OAUTH_DISCORD_CLIENTID'],
+            'client_secret' => $_ENV['OAUTH_DISCORD_CLIENT_SECRET'],
+            'enabled' => true,
+        ],
+        'enabled' => true,
+    ],
     'login_blocking' => [
       'max_attempts' => 3,
       'timeout_in_minutes' => 1,
